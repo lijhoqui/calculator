@@ -15,15 +15,14 @@ steps:
     versionSpec: '10.x'
   displayName: 'Install Node.js'
 
-- script: 
+- script: |
     npm install
   displayName: 'npm install'
   
-- script: 
+- script: |
     npm audit fix --force
-    npm test
   displayName: 'npm build'
   
-- script:
+- script: |
     npm test
   displayName: 'npm  test'
